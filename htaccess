@@ -1,0 +1,9 @@
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault "access plus 6 months"
+  <filesMatch "\.(html)$">
+    ExpiresDefault "access plus 11 minutes"
+  </filesMatch>
+</IfModule>
+FileETag None
+AddDefaultCharset UTF-8
